@@ -1,0 +1,90 @@
+/*Simple reset*/
+* {margin: 0; padding: 0;}
+@font-face {
+    font-family: 'merry_chris';
+    src: url('fonts/MerryChristmasFlake.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    /*You can use any kind of background here.*/
+    background: #2627e2; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#2627e2, yellow); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#2627e2, yellow); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#2627e2, yellow); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#2627e2, yellow); /* Standard syntax */
+}
+canvas {
+    position: absolute;
+    display: block;
+}
+.footer{
+   /* background: url(img/bg_1.png);*/
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+}
+.main{
+    position: absolute;
+    width: 400px;
+    height: 200px;
+    text-align: center;
+    left: 0;
+    top: 35%;
+    right: 0;
+    margin: 0 auto;
+}
+.main .title{
+    font-size: 80px;
+    font-family: merry_chris;
+    color:#af0c0c;
+    opacity: 0.5;
+}
+.main .sub-title{
+    font-size: 24px;
+    margin-top: 20px;
+    font-family: PingFang SC;
+    color: #0c0daf;
+    opacity: 0.4;
+}
+.main .sub-title2{
+    margin-top: 16px;
+    font-size: 20px;
+    font-family: merry_chris;
+    color: #0c0daf;
+    opacity: 0.5;
+}
+.main .links{
+    margin-top: 30px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    opacity: 0.8;
+}
+.links a{
+    text-decoration: none;
+    font-size: 18px;
+    color:blue
+}
+.links a+a{
+    margin-left: 10px;
+}
+body .sharePic{
+    position: absolute;
+}
+#play{
+    position: absolute;
+    top: 20%;
+    opacity: 0.3;
+    margin: 0 auto;
+    width: 200px;
+    right: 0;
+    color: white;
+    font-size: 30px;
+    left: 0;
+    text-align: center;
+}
+#play:hover{
+    cursor: hand;
+}
