@@ -1,0 +1,69 @@
+<!DOCTYPE html PUBLIC “-//W3C//DTD XHTML 1.0 Transitional//EN” “http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd”>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="renderer" content="webkit"/>
+    <meta name="format-detection" content="telephone=no,email=no,adress=no" />
+    <title>圣诞快乐</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="./styles/index.css">
+    <script type="text/javascript" src='./js/index.js'></script>
+
+</head>
+<body onselectstart="return false">
+<div id='wx_pic' style='margin:0 auto;display:none;'>
+    <img class="sharePic" src="http://www.xiangcs.com/styles/img/pic300.jpg" />
+</div>
+<div id='routes'>
+    <canvas id="canvas"></canvas>
+    <div  class="main">
+        <p class="title">Merry Christmas</p>
+        <p class="sub-title">欢迎光临相昌盛的网站</p>
+        <p class="sub-title2">Welcome To Xiangcs's Personal Website</p>
+        <p class="links"><a href="/blogs">个人博客</a><a href="http://weibo.com/xiangcs" target="_blank">我的微博</a></p>
+
+    </div>
+    <audio id="audio" preload="none">
+        <source src="styles/media/audio3.mov" type="audio/mpeg">
+    </audio>
+
+    <div onclick="play()" id="play" >播放音乐</div>
+
+</div>
+
+
+<!--[if lt IE 9]>
+<!--
+<script type="text/javascript" src='./js/es5-shim.min.js'></script>
+<script type="text/javascript" src='./js/es5-sham.min.js'></script>
+-->
+<![endif]-->
+<!--webpackJsonp.js web端加载工具-->
+<!--
+<script type="text/javascript" src="/deploy/webpackJsonp.js"></script>
+<script type="text/javascript" src="/deploy/pc.js"></script>
+<script type="text/javascript" src="/deploy/vendor.js"></script>
+-->
+<!--webpack-replace-end-->
+<script type="text/javascript">
+    var audio =document.getElementById('audio');
+    var btn = document.getElementById('play');
+
+    function play() {
+        if (audio.paused){
+            audio.play();
+           btn.innerHTML = "暂停音乐";
+        } else {
+            audio.pause();
+            btn.innerHTML ="播放音乐";
+        }
+
+    }
+</script>
+
+</body>
+</html>
+
+
