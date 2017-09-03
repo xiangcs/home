@@ -20,9 +20,9 @@
     <canvas id="canvas"></canvas>
     <div  class="main">
         <p class="title">Merry Christmas</p>
-        <p class="sub-title">欢迎光临相昌盛的网站</p>
+        <!--<p class="sub-title">欢迎光临相昌盛的网站</p>-->
         <p class="sub-title2">Welcome To Xiangcs's Personal Website</p>
-        <p class="links"><a href="/blogs">个人博客</a><a href="http://weibo.com/xiangcs" target="_blank">我的微博</a></p>
+        <p class="links"><a href="http://weibo.com/xiangcs" target="_blank">我的微博</a></p>
 
     </div>
     <audio id="audio" preload="none">
@@ -50,6 +50,10 @@
 <script type="text/javascript">
     var audio =document.getElementById('audio');
     var btn = document.getElementById('play');
+    
+    audio.onended = function(){
+        btn.innerHTML ="播放音乐";
+    }
 
     function play() {
         if (audio.paused){
@@ -61,6 +65,7 @@
         }
 
     }
+    
 </script>
 
 </body>
