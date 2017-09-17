@@ -1,11 +1,5 @@
 /*Simple reset*/
 * {margin: 0; padding: 0;}
-@font-face {
-    font-family: 'merry_chris';
-    src: url('fonts/MerryChristmasFlake.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
 
 body {
     /*You can use any kind of background here.*/
